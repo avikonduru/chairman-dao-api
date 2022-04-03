@@ -1,0 +1,16 @@
+{
+  "name": "chairman-dao-test",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ chairman-dao-test",
+    "create-local": "graph create --node http://localhost:8020/ chairman-dao-test",
+    "remove-local": "graph remove --node http://localhost:8020/ chairman-dao-test",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 chairman-dao-test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
